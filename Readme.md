@@ -2,7 +2,7 @@
 *Files to look at*:
 
 * [Window1.xaml](./CS/EditorsDesignTime/Window1.xaml) (VB: [Window1.xaml](./VB/EditorsDesignTime/Window1.xaml))
-* [Window1.xaml.cs](./CS/EditorsDesignTime/Window1.xaml.cs) (VB: [Window1.xaml](./VB/EditorsDesignTime/Window1.xaml))
+* [Window1.xaml.cs](./CS/EditorsDesignTime/Window1.xaml.cs) (VB: [Window1.xaml.vb](./VB/EditorsDesignTime/Window1.xaml.vb))
 <!-- default file list end -->
 # How to change a cell template based on some condition
 

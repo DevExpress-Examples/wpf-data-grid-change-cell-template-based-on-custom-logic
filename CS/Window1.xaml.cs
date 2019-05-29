@@ -1,10 +1,9 @@
-﻿using System;
+﻿using DevExpress.Xpf.Core;
+using DevExpress.Xpf.Grid;
+using System;
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
-using DevExpress.Xpf.Grid;
-using DevExpress.Xpf.Core;
-using System.ComponentModel;
 
 namespace EditorsDesignTime {
     public partial class Window1 : Window {
@@ -55,11 +54,8 @@ namespace EditorsDesignTime {
     public class EditorTemplateSelector : DataTemplateSelector {
         public override DataTemplate SelectTemplate(object item, DependencyObject container) {
             GridCellData data = (GridCellData)item;
-            PropertyDescriptor property = TypeDescriptor.GetProperties(data.Data)["Editor"];
-            if (property == null)
-                return null;
-            string editorType = property.GetValue(data.Data) as string;
-            return string.IsNullOrEmpty(editorType) ? null : (DataTemplate)((FrameworkElement)container).FindResource(editorType);
+            var dataItem = data.RowData.Row as TestData;
+            return string.IsNullOrEmpty(dataItem.Editor) ? null : (DataTemplate)((FrameworkElement)container).FindResource(dataItem.Editor);
         }
     }
 }

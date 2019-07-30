@@ -54,31 +54,31 @@
     <Import Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Printing.v11.2.Core">
+    <Reference Include="DevExpress.Printing.v13.1.Core">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Data.v11.2">
+    <Reference Include="DevExpress.Data.v13.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Mvvm.v11.2">
+    <Reference Include="DevExpress.Mvvm.v13.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Mvvm.v11.2">
+    <Reference Include="DevExpress.Xpf.Mvvm.v13.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Core.v11.2">
+    <Reference Include="DevExpress.Xpf.Core.v13.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Printing.v11.2.Core">
+    <Reference Include="DevExpress.Xpf.Printing.v13.1.Core">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Printing.v11.2">
+    <Reference Include="DevExpress.Xpf.Printing.v13.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Grid.v11.2.Core">
+    <Reference Include="DevExpress.Xpf.Grid.v13.1.Core">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Grid.v11.2">
+    <Reference Include="DevExpress.Xpf.Grid.v13.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System" />

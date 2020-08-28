@@ -69,9 +69,6 @@
     <Reference Include="DevExpress.Xpf.Core.v13.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Printing.v13.1.Core">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
     <Reference Include="DevExpress.Xpf.Printing.v13.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>

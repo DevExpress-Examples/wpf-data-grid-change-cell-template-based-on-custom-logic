@@ -55,7 +55,7 @@ namespace EditorsDesignTime {
         public override DataTemplate SelectTemplate(object item, DependencyObject container) {
             GridCellData data = (GridCellData)item;
             var dataItem = data.RowData.Row as TestData;
-            return string.IsNullOrEmpty(dataItem.Editor) ? null : (DataTemplate)((FrameworkElement)container).FindResource(dataItem.Editor);
+            return dataItem == null || string.IsNullOrEmpty(dataItem.Editor) ? null : (DataTemplate)((FrameworkElement)container).FindResource(dataItem.Editor);
         }
     }
 }

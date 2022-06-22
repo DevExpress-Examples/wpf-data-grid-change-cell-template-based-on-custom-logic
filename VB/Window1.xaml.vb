@@ -10,13 +10,13 @@ Namespace EditorsDesignTime
         Inherits Window
 
         Public Sub New()
-            InitializeComponent()
+            Me.InitializeComponent()
             Dim list As List(Of TestData) = New List(Of TestData)()
             For i As Integer = 0 To 100 - 1
                 list.Add(New TestData() With {.Editor = GetEditorType(i), .Value = GetEditValue(i)})
             Next
 
-            grid.ItemsSource = list
+            Me.grid.ItemsSource = list
         End Sub
 
         Private Function GetEditorType(ByVal index As Integer) As String

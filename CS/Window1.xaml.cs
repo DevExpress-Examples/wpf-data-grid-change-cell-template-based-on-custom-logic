@@ -53,7 +53,7 @@ namespace EditorsDesignTime {
     }
     public class EditorTemplateSelector : DataTemplateSelector {
         public override DataTemplate SelectTemplate(object item, DependencyObject container) {
-            GridCellData data = (GridCellData)item;
+            EditGridCellData data = (EditGridCellData)item;
             var dataItem = data.RowData.Row as TestData;
             return dataItem == null || string.IsNullOrEmpty(dataItem.Editor) ? null : (DataTemplate)((FrameworkElement)container).FindResource(dataItem.Editor);
         }

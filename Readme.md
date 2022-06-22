@@ -33,12 +33,12 @@ To implement this approach, do the following:
 
 2. **Create a custom *DataTemplateSelector* descendant.** This descendant should return templates according to your scenario requirements.  
 
-   ***Note:*** Each GridControl cell contains an object of the [GridCellData](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridCellData) data type in its DataContext. This object's [RowData.Row](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.RowData.Row) property contains your data item. You can use this property if your logic should take property values from data items into account:
+   ***Note:*** Each GridControl cell contains an object of the [EditGridCellData](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.EditGridCellData) data type in its DataContext. This object's [RowData.Row](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.RowData.Row) property contains your data item. You can use this property if your logic should take property values from data items into account:
 
    ```cs
    public class EditorTemplateSelector : DataTemplateSelector {
        public override DataTemplate SelectTemplate(object item, DependencyObject container) {
-           GridCellData data = (GridCellData)item;
+           EditGridCellData data = (EditGridCellData)item;
            var dataItem = data.RowData.Row as TestData;
            return dataItem == null || string.IsNullOrEmpty(dataItem.Editor) ? null : (DataTemplate)((FrameworkElement)container).FindResource(dataItem.Editor);
        }

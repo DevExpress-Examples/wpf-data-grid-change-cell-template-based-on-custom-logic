@@ -65,7 +65,7 @@ Namespace EditorsDesignTime
         Inherits DataTemplateSelector
 
         Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As DependencyObject) As DataTemplate
-            Dim data As GridCellData = CType(item, GridCellData)
+            Dim data As EditGridCellData = CType(item, EditGridCellData)
             Dim dataItem = TryCast(data.RowData.Row, TestData)
             Return If(dataItem Is Nothing OrElse String.IsNullOrEmpty(dataItem.Editor), Nothing, CType(CType(container, FrameworkElement).FindResource(dataItem.Editor), DataTemplate))
         End Function
